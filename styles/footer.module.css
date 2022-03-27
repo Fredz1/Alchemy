@@ -1,0 +1,56 @@
+.container{
+  display: grid;
+  height: 25vh;
+  grid-template-rows: max-content max-content;
+}
+
+.topContainer{
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset;
+    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 4em;
+  justify-content: space-around;
+  font-size: 0.9vw;
+  padding: 4em;
+}
+
+.heading{
+  width: fit-content;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.heading > *{
+  margin: 1em 0;
+}
+
+.heading > h4{
+  cursor: default;
+  font-size: 1.3em;
+  border-bottom: 2px solid #0099b0;
+  text-align: center;
+}
+
+.alchemyLogo{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.bottomContainer{
+  display: grid;
+  margin-top: 2px solid green;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-around;
+  height: max-content;
+  padding: 4em;
+}
+
+.franchiseLogo{
+  position: relative;
+  min-width: 100px;
+  width: 200px;
+  height: auto;
+
+}

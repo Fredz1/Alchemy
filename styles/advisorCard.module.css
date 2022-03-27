@@ -1,0 +1,16 @@
+.container{
+  display: grid;
+  grid-template-rows: minmax(8vw,15vw);
+  overflow: hidden;
+  font-size: 2vw; 
+}
+
+.image{
+  position: relative;
+  object-position: 50% 50%;
+}
+
+
+.info{
+  font-size: 1.1em;
+}
