@@ -44,6 +44,15 @@ const Footer = () => {
 
           <div className={style.heading}>
             <h4>
+              Social Media
+            </h4>
+            <p>Facebook</p>
+            <p>Instagramme</p>
+            <p>Twitter</p>
+          </div>
+
+          <div className={style.heading}>
+            <h4>
               Contact Us
             </h4>
             <p>

@@ -1,12 +1,13 @@
 .container{
   display: grid;
-  height: 25vh;
+  height: fit-content;
   grid-template-rows: max-content max-content;
+  
 }
 
 .topContainer{
-  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset;
-    
+  /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
+  background-color: rgba(255, 204, 128, 0.5);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 4em;
@@ -16,9 +17,7 @@
 }
 
 .heading{
-  width: fit-content;
-  padding: 0 1em;
-  margin: 0 auto;
+  width: max-content;
 }
 
 .heading > *{
@@ -40,17 +39,35 @@
 
 .bottomContainer{
   display: grid;
-  margin-top: 2px solid green;
   grid-template-columns: repeat(2,1fr);
   justify-content: space-around;
   height: max-content;
-  padding: 4em;
+  justify-items: center;
+  height: 5em;
 }
 
 .franchiseLogo{
   position: relative;
-  min-width: 100px;
-  width: 200px;
-  height: auto;
+  min-width: 50%;
+  
+}
 
+@media all and (max-width: 768px){
+  .topContainer{
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
+    gap: 4em;
+    justify-content: space-evenly;
+    font-size: 2.5vw;
+    padding: 1em;
+  }
+
+  .bottomContainer{
+    display: grid;
+    justify-content: space-around;
+    height: max-content;
+    padding: 1em;
+    font-size: 2.5vw;
+  }
 }

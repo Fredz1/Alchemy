@@ -1,9 +1,9 @@
 .container{
-  background-color: #ffecb3; 
+  background-color: white; 
 }
 
 .banner{
-  height: 25vh;
+  height: 50vh;
 }
 
 .bannerText{
@@ -17,19 +17,30 @@
 
 .advisorSection{
   display: grid;
- 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(5em, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(10em, 1fr));
-  gap: 1em;
+  gap: 4vw;
+  height: max-content;
+  margin: 4em;
+  align-items: center;
 }
 
 @media all and (max-width: 768px){
+  .banner{
+    height: 25vh;
+  }
   .bannerText{
     position: relative;
-    top: 65%;
+    top: 50%;
     left: 50%;
     font-size: 5vw;
     width: max-content;
     transform: translateX(-50%) translateY(-50%); 
+  }
+
+  .advisorSection{
+    grid-template-columns: repeat(2, minmax(5em, 1fr));
+    margin: 1em;
+    gap: 1em;
   }
 }

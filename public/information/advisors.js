@@ -28,6 +28,66 @@ let advisorList = [
     "car" : "A Lambo",
     "position" : "The Advisor",
     "number" : 111111111
+  },
+  {
+    "unique" : "IDaoisdjjao",
+    "name" : "Julian",
+    "surname" : "Fredericks",
+    "image" : "serajHeadShot.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
+  },
+  {
+    "unique" : "sdfsqweef56",
+    "name" : "Amy",
+    "surname" : "Robertson",
+    "image" : "cartoon.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
+  },
+  {
+    "unique" : "batreteefg",
+    "name" : "Julian",
+    "surname" : "Fredericks",
+    "image" : "serajHeadShot.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
+  },
+  {
+    "unique" : "IDaoi32sdjjao",
+    "name" : "Julian",
+    "surname" : "Fredericks",
+    "image" : "serajHeadShot.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
+  },
+  {
+    "unique" : "sdfse878f56",
+    "name" : "Amy",
+    "surname" : "Robertson",
+    "image" : "cartoon.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
+  },
+  {
+    "unique" : "batrsdfetfg",
+    "name" : "Julian",
+    "surname" : "Fredericks",
+    "image" : "serajHeadShot.png",
+    "years" : 25,
+    "car" : "A Lambo",
+    "position" : "The Advisor",
+    "number" : 111111111
   }
 ]
 

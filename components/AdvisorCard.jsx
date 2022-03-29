@@ -1,6 +1,7 @@
 // Modules
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // Style
 import style from '../styles/advisorCard.module.css'
@@ -18,6 +19,9 @@ const AdvisorCard = ({details, image}) => {
       <div className={style.info}>
         {details.name} {details.surname}
       </div>
+      <Link href={`/advisors/${details.unique}`}>
+        <a href="">Itsa a link</a>
+      </Link>
     </div>
   )
 }

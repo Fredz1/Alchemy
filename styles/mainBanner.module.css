@@ -4,6 +4,7 @@
   height: 75vw;
   background-repeat: repeat-x;
   background-size: contain;
+  z-index: 1;
 }
 
 .slogan{
