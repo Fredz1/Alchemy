@@ -1,6 +1,6 @@
 .container{
   display: grid;
-  grid-template-rows: minmax(70%,80%) minmax(30%,20%);
+  grid-template-rows: 3fr 1fr 1fr;
   overflow: hidden;
   font-size: 1em; 
   height: 10em;
@@ -8,7 +8,6 @@
   background-color: #ffecb3;
   align-items: center;
   width: 10em;
-  padding: 1em;
 }
 
 .image{

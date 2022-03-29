@@ -20,7 +20,7 @@ const AdvisorCard = ({details, image}) => {
         {details.name} {details.surname}
       </div>
       <Link href={`/advisors/${details.unique}`}>
-        <a href="">Itsa a link</a>
+        <a href="">Profile</a>
       </Link>
     </div>
   )
