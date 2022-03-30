@@ -1,0 +1,26 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30vw;
+  font-size: 1.2em;
+  gap: 1em;
+  background-color: #fde3a7;
+}
+
+.image{
+  position: relative;
+  height: 100%;
+  align-content: space-around;
+}
+
+.icon{
+  position: relative;
+  height: 100%;
+}
+
+.form{
+  display: grid;
+  width: 100%;
+  align-content: space-around;
+  border-left: 2px solid #0099b0;
+}

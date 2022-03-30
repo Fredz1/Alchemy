@@ -7,7 +7,7 @@
 
 .topContainer{
   /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
-  background-color: rgba(255, 204, 128, 0.5);
+  background-color: #f6efe9;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 4em;

@@ -1,6 +1,6 @@
 .mainBannerContainer{
   max-height: 50vh;
-  background-color: #ffcc80;
+  background-color: #f9b42d;
   height: 75vw;
   background-repeat: repeat-x;
   background-size: contain;
@@ -17,7 +17,6 @@
   z-index: 2;
   color: black;
   font-size: 5vw;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   letter-spacing: -1.5px;
   font-weight: lighter;

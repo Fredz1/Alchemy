@@ -1,5 +1,6 @@
 // Modules
 import React from 'react'
+import ContactBanner from '../components/ContactBanner'
 
 // Components
 import MainBanner from '../components/MainBanner'
@@ -13,6 +14,7 @@ const index = () => {
     <div>
       <MainBanner />
       <Solutions />
+      <ContactBanner />
     </div>
   )
 }
