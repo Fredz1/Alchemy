@@ -1,8 +1,8 @@
 let advisorList = [
   {
     "unique" : "SAmerica",
-    "name" : "Seraj",
-    "surname" : "America",
+    "name" : "Etienne",
+    "surname" : "Wilsnage",
     "image" : "serajHeadShot.png",
     "years" : 20,
     "car" : "Mercedes S-Class",
@@ -21,7 +21,7 @@ let advisorList = [
   },
   {
     "unique" : "FredWilliams",
-    "name" : "Frederick",
+    "name" : "Mark",
     "surname" : "Williams",
     "image" : "cartoon.png",
     "years" : 25,

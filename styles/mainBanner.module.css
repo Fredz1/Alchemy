@@ -1,7 +1,7 @@
 .mainBannerContainer{
   max-height: 50vh;
-  background-color: #f9b42d;
   height: 75vw;
+  background-image: url('../public/assets/media/Vitruve_Luc_Viatour_web.png');
   background-repeat: repeat-x;
   background-size: contain;
   z-index: 1;

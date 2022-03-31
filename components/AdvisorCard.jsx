@@ -6,9 +6,10 @@ import Link from 'next/link'
 // Style
 import style from '../styles/advisorCard.module.css'
 
-// Asetts
 
-// HOOK
+/* 
+  HOOK
+*/
 const AdvisorCard = ({details, image}) => {
 
   return (
@@ -20,7 +21,7 @@ const AdvisorCard = ({details, image}) => {
         {details.name} {details.surname}
       </div>
       <Link href={`/advisors/${details.unique}`}>
-        <a href="">Profile</a>
+        <a>Profile</a>
       </Link>
     </div>
   )

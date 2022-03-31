@@ -46,6 +46,11 @@
   height: 5em;
 }
 
+.bottomContainer > p{
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .franchiseLogo{
   position: relative;
   min-width: 50%;
