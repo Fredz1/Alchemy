@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 // Style
 import style from '../styles/advisorCard.module.css'
@@ -12,6 +13,8 @@ import style from '../styles/advisorCard.module.css'
 */
 const AdvisorCard = ({details, image}) => {
 
+  const Router = useRouter()
+
   return (
     <div className={style.container}>
       <div className={style.image}>
@@ -20,9 +23,9 @@ const AdvisorCard = ({details, image}) => {
       <div className={style.info}>
         {details.name} {details.surname}
       </div>
-      <Link href={`/advisors/${details.unique}`}>
-        <a>Profile</a>
-      </Link>
+      <button onClick={() => Router.push()}>
+        Profile
+      </button>
     </div>
   )
 }
