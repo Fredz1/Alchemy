@@ -13,6 +13,8 @@ import style from '../styles/advisorCard.module.css'
 */
 const AdvisorCard = ({details, image}) => {
 
+
+
   const Router = useRouter()
 
   return (
@@ -23,7 +25,7 @@ const AdvisorCard = ({details, image}) => {
       <div className={style.info}>
         {details.name} {details.surname}
       </div>
-      <button onClick={() => Router.push()}>
+      <button onClick={() => Router.push(`advisors/${details.unique}`)}>
         Profile
       </button>
     </div>

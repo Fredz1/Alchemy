@@ -1,4 +1,4 @@
-let advisorList = [
+[
   {
     "unique" : "SAmerica",
     "name" : "Etienne",
@@ -90,9 +90,3 @@ let advisorList = [
     "number" : 111111111
   }
 ]
-
-module.exports =  advisorList
-
-
-// http://localhost:3000/advisors/
-// http://localhost:3000/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FalchemyFS.232e083c.png&w=3840&q=10

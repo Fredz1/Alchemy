@@ -3,7 +3,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import list from '../../public/information/advisors' 
+import list from '../../public/information/advisors.json' 
 
 // Style
 import style from '../../styles/advisorProfile.module.css'
@@ -11,11 +11,12 @@ import style from '../../styles/advisorProfile.module.css'
 /* 
   HOOK
 */
-const advisor = (props) => {
+const advisor = () => {
+
   const {query: { advisor }} = useRouter()
 
   const [advisorInfo, setAdvisorInfo] = useState('Loading')
-  const [image, setImage] = useState('placeholder')
+  const [image, setImage] = useState('/../../public/assets/Advisors/holder.jpg')
 
   useEffect(
     () => {
@@ -25,19 +26,20 @@ const advisor = (props) => {
       )
 
       if (advisorData != -1) {
-        setAdvisorInfo(advisorData)
-        setImage(require(`../../public/assets/Advisors/${advisorData.image}`))
+        setAdvisorInfo(list[advisorData])
+        setImage(require(`../../public/assets/Advisors/${list[advisorData].image}`))
       }
 
     
 
-    }, [advisor]
+    },
+    [advisor]
   )
   
   return (
     <div>
 
-     {/*  <Image src={require(`../../public/assets/Advisors/holder`)} /> */}
+      <Image src={image || 'http://localhost:3000/public/information/holder.jpg'} width={50} height={50}/>
     </div>
   )
 }
