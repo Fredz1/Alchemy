@@ -4,9 +4,8 @@
   height: 30vw;
   font-size: 1.2em;
   gap: 1em;
-  background-color: #fde3a7;
 }
-
+ 
 .image{
   position: relative;
   height: 100%;
@@ -33,4 +32,40 @@
 .form > div{
   display: flex;
   flex-direction: row;
+}
+
+@media all and (max-width: 768px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: max-content;
+    font-size: 2vw;
+    gap: 1em;
+    margin: 1em 1em;
+  }
+
+}
+
+@media all and (max-width: 426px){
+  .image{
+    position: relative;
+    width: 100%;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: max-content;
+    font-size: 4vw;
+  }
+
+  .form{
+    row-gap: 1.25em;  
+  
+  }
+
+
+
+
 }

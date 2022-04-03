@@ -24,6 +24,16 @@ const Footer = () => {
             <h4>
               Visit Us
             </h4>
+            <p>
+              Stamform Bridge
+            </p>
+            <p>
+              Great Suburb
+            </p>
+            <p>
+              If you only knew
+            </p>
+            <p>7436</p>
 
             <Link href='https://goo.gl/maps/Kr4FfZWMXYNzY5Kz5' _blank>
               <a>
@@ -72,6 +82,8 @@ const Footer = () => {
             <Image src={omFranchiseLogo} quality={75} layout='fill' objectFit='contain'/>
           </div>
         </div>
+
+        {/* Add legal notices */}
 
       </footer>
       

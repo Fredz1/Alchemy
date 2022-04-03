@@ -1,13 +1,29 @@
 [
   {
     "unique" : "SAmerica",
-    "name" : "Etienne",
-    "surname" : "Wilsnage",
+    "name" : "Hemant",
+    "surname" : "Narshi",
     "image" : "serajHeadShot.png",
     "years" : 20,
     "car" : "Mercedes S-Class",
     "position" : "Senior Advisor",
-    "number" : 555555555
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ],
+    "about" : "a thousandaire, part-time ass-model and once cut a gatby into 5."
   },
   {
     "unique" : "RNaidoo",
@@ -17,7 +33,22 @@
     "years" : 40,
     "car" : "Range Rover",
     "position" : "Super Advisor",
-    "number" : 444444444
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "FredWilliams",
@@ -27,7 +58,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "IDaoisdjjao",
@@ -37,7 +83,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "sdfsqweef56",
@@ -47,7 +108,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "batreteefg",
@@ -57,7 +133,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "IDaoi32sdjjao",
@@ -67,7 +158,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "sdfse878f56",
@@ -77,7 +183,22 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   },
   {
     "unique" : "batrsdfetfg",
@@ -87,6 +208,21 @@
     "years" : 25,
     "car" : "A Lambo",
     "position" : "The Advisor",
-    "number" : 111111111
+    "contactInfo" : [
+      {
+        "office" : 555555555
+      },
+      {
+        "cellNum" : 4444444444
+      },
+      {
+        "email" : "fred@gmail.com"
+      }
+    ],
+    "awards" : [
+      "Crayfish",
+      "OMP",
+      "inshore"
+    ]
   }
 ]

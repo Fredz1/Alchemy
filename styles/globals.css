@@ -12,6 +12,17 @@ a{
   color: inherit;
 }
 
+a:hover {
+  border-bottom: linear-gradient(90deg, blue, red),
+    linear-gradient(
+      90deg,
+      purple,
+      cyan
+    );
+  background-position-x: calc(100% + 20px), 0;
+  transition: background-position-x 500ms;
+}
+
 button{
   background-color: transparent;
   border: none;

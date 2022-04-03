@@ -1,6 +1,7 @@
 // modules
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // styles
 import style from '../styles/contactBanner.module.css'
@@ -21,7 +22,7 @@ const ContactBanner = () => {
       </div>
 
       <div className={style.form}>
-        {/* Name, Surname, message, email, telephone, number */}
+        
         <h3 >
           Let us make your dream work or if you need a financial planner.
         </h3>
@@ -47,6 +48,16 @@ const ContactBanner = () => {
             Or email us at <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>  and will get back to you within 24 hours
           </p>
 
+        </div>
+
+        <div>
+
+          <div className={style.icon}>
+            <Image src={mailIcon} layout='fill' objectFit='contain' />
+          </div>
+          <p>
+            Click <Link href="/contact"><a> here </a></Link> to use our contact form
+          </p>
         </div>
 
       </div>

@@ -1,5 +1,4 @@
 .wrapper{
-  background: red;
   position: sticky;
 }
 
@@ -35,8 +34,9 @@
     z-index: 15;
     display: grid;
     position: absolute;
-    grid-template-columns: minmax(20vw, 35vw);
+    grid-template-columns: 1fr;
     max-width: 100vw;
     width: 100%;
+    height: fit-content;
   }
 }

@@ -4,13 +4,24 @@ import style from '../styles/navLinks.module.css'
 // Modules
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 // Assets
 import burgerMenu from '../public/assets/media/Hamburger_icon.png'
 
+
+//HOOK
 const NavLinks = () => {
+
   const [showMenu, setshowMenu] = useState(false)
+
+  const { query } = useRouter()
+
+  useEffect(() => {
+    setshowMenu(false)
+    
+  }, [query]);
 
   return (
     <div className={style.navLinks}>
@@ -21,23 +32,23 @@ const NavLinks = () => {
 
       <div className={showMenu? style.linksShow : style.linksHidden}>
 
-        <Link href='/' >
+        <Link href='/' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='home'>Home</a>
         </Link>
 
-        <Link href='/aboutus' >
+        <Link href='/aboutus' onClick={() => setshowMenu(!showMenu)} >
           <a aria-label='About Us'>About</a>
         </Link>
 
-        <Link href='/culture' >
+        <Link href='/culture' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='Culture'>Culture</a>
         </Link>
 
-        <Link href='/advisors' >
+        <Link href='/advisors' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='The Advisors'>Advisors</a>
         </Link>
 
-        <Link href='/contact' >
+        <Link href='/contact' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='contact'>Contact</a>
         </Link>
         
