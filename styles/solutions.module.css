@@ -42,7 +42,6 @@
 .offering > div > h3{
   font-size: 1.25em;
   text-align: center;
-  
 }
 
 @media all and (max-width: 768px){
@@ -54,5 +53,6 @@
     /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
     align-content: center;
     padding: 2vw 2vw;
+    margin: 4em 0;
   }
 }
