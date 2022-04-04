@@ -1,9 +1,28 @@
-Sauvignon
-#f6efe9
+#0D0D0D
+#590902
+#F2CDA0
+#8C540F
+#BFA169
 
-newer
-Cape Honey
-#fde3a7
 
-Light Buckthorn
-#f9b42d
+
+/* Color Theme Swatches in Hex */
+.Illustration-1-hex { color: #2A5E8C; }
+.Illustration-2-hex { color: #F2BF5E; }
+.Illustration-3-hex { color: #F2CF8D; }
+.Illustration-4-hex { color: #735F5D; }
+.Illustration-5-hex { color: #730202; }
+
+/* Color Theme Swatches in RGBA */
+.Illustration-1-rgba { color: rgba(42, 94, 140, 1); }
+.Illustration-2-rgba { color: rgba(242, 190, 94, 1); }
+.Illustration-3-rgba { color: rgba(242, 206, 140, 1); }
+.Illustration-4-rgba { color: rgba(114, 94, 92, 1); }
+.Illustration-5-rgba { color: rgba(114, 2, 2, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Illustration-1-hsla { color: hsla(208, 53, 35, 1); }
+.Illustration-2-hsla { color: hsla(39, 85, 66, 1); }
+.Illustration-3-hsla { color: hsla(39, 79, 75, 1); }
+.Illustration-4-hsla { color: hsla(5, 10, 40, 1); }
+.Illustration-5-hsla { color: hsla(0, 96, 22, 1); }

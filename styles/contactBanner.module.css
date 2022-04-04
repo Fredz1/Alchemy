@@ -4,6 +4,8 @@
   height: 30vw;
   font-size: 1.2em;
   gap: 1em;
+  background-color: rgba(114, 94, 92, 1);
+  color: white;
 }
  
 .image{
@@ -58,6 +60,8 @@
     grid-template-rows: 1fr 1fr;
     height: max-content;
     font-size: 4vw;
+    margin: 0;
+    padding: 1em;
   }
 
   .form{

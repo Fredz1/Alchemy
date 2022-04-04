@@ -33,7 +33,8 @@ const ContactBanner = () => {
           </div>
 
           <p>
-            Call us on 076 134 9290 between 8:30am and 5pm weekdays and we will gladly assist you.
+            Call us on <a href="tel:+27 027 134 9290">076 134 9290</a> 
+            <p>Between 8:30am and 5pm weekdays and we will gladly assist you.</p>
           </p>
 
         </div>
@@ -45,7 +46,8 @@ const ContactBanner = () => {
           </div>
           
           <p>
-            Or email us at <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>  and will get back to you within 24 hours
+            Or email us at <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>  
+            <p>We gladly get back to you within 24 hours</p> 
           </p>
 
         </div>
