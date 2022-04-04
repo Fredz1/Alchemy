@@ -44,6 +44,7 @@
     font-size: 2vw;
     gap: 1em;
     margin: 1em 1em;
+    padding: 0.5em;
   }
 
 }
@@ -61,7 +62,7 @@
     height: max-content;
     font-size: 4vw;
     margin: 0;
-    padding: 1em;
+    padding: 0.5em;
   }
 
   .form{
