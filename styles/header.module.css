@@ -42,8 +42,8 @@
   }
 
   .headerContainer > div{
-    max-width: 80%;
-    margin: 0 0 0 0.5em;
+    max-width: 40%;
+    margin: 0 auto;
   }
   
 }

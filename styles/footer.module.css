@@ -6,8 +6,7 @@
 }
 
 .topContainer{
-  /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
-  /* background-color: #f6efe9; */
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 4em;
@@ -67,12 +66,12 @@
     /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
-    gap: 4em;
+    gap: 1em;
     justify-content: space-evenly;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    font-size: 4vw;
+    font-size: 2vw;
     padding: 1em;
     height: fit-content;
   }
@@ -90,7 +89,7 @@
     height: max-content;
     padding: 1em;
     gap: 0.5em;
-    font-size: 3vw;
+    font-size: 1.5vw;
   }
 
   .franchiseLogo{
