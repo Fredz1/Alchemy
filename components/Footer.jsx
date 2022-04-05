@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className={style.bottomContainer}>
-          <p>
+          <p className={style.copyWrite}>
             &copy; Alchemy Financial Services 2022
           </p>
           <div className={style.franchiseLogo}>

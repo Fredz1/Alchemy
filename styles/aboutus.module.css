@@ -1,0 +1,44 @@
+.container{
+  display: grid;
+  grid-template-rows: auto;
+  margin: 2em;
+  width: fit-content;
+  justify-content: space-around;
+  margin: 3em auto;
+  gap: 2em;
+}
+
+.container > div > p{
+  line-height: 1.5em;
+  max-width: 50ch;
+  font-size: 1.3rem;
+  margin: 1em 0;
+}
+
+.container > div > h3{
+  line-height: 1.5em;
+  font-size: 3rem;
+}
+
+.container > div > p:nth-child(odd){
+  background-color: rgba(42, 94, 140, 0.1);
+}
+
+.bannerImage{
+  position: relative;
+  width: 100%;
+  height: 30vw;
+}
+
+@media all and (max-width: 768px){
+  .container > div > h3{
+    line-height: 1.5em;
+    font-size: 2rem;
+    margin: 0.5em 0.5em;
+  }
+
+  .container > div > p{
+    font-size: 1.1rem;
+    margin: 1em 0.5em;
+  }
+}

@@ -1,8 +1,13 @@
+@font-face{
+  font-family: banner;
+  src:  url(../public/assets/fonts/miranda.ttf)
+}
+
 .mainBannerContainer{
-  max-height: 50vh;
+  max-height: 80vh;
   height: 75vw;
   /* background-image: url('../public/assets/media/alchemyBanner.jpg'); */
-  /* background-image: url('../public/assets/media/Vitruve_Luc_Viatour_web.png'); */
+  background-image: url('../public/assets/media/Vitruve_Luc_Viatour_web.png');
   /* background-repeat: repeat-x; */
   background-color: rgba(114, 94, 92, 1);
   background-size: contain;
@@ -11,6 +16,7 @@
 }
 
 .slogan{
+  font-family: banner;
   cursor: default;
   user-select: none;
   position: relative;
@@ -22,6 +28,7 @@
   font-size: 5vw;
   text-align: center;
   font-weight: lighter;
+  letter-spacing: 0.5ch;
 }
 
 @media all and (max-width: 768px){
