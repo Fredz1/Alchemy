@@ -12,6 +12,7 @@
   background-color: rgba(114, 94, 92, 1);
   background-size: contain;
   background-repeat: space;
+  background-position: center;
   z-index: 1;
 }
 
