@@ -12,9 +12,9 @@ const MainBanner = () => {
     <div className={style.wrapper}>
       <div className={style.mainBannerContainer}>
 
-        <p className={style.slogan}>
+        {/* <p className={style.slogan}>
           The Powers Of Your Dreams
-        </p>
+        </p> */}
 
       </div>
     </div>
