@@ -34,15 +34,15 @@ const contact = () => {
     <div className={style.container}>
       <div className={style.details}>
         
-        
         <div>
           <h3>
-            Office: 
+            Office 
           </h3>
           <p>
             <a href="tel:+27 21 279 1279">021 276 1279</a>
           </p>
         </div>
+
         <div>
           <h3>
             Email
@@ -51,28 +51,35 @@ const contact = () => {
             <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>
           </p>
         </div>
-      
 
         <div>
+
           <h3>
             Social Media
           </h3>
+
           <Link href="https://www.facebook.com/fredwil25/" _blank>
             <a>
               <Image src={facebookIcon}/>
             </a>
           </Link>
+
           <Link href="https://www.linkedin.com/in/frederick-williams-b2215730/">
             <a>
               <Image src={linkedInIcon}/>
             </a>
+            
           </Link>
+
+
           <Link href="https://www.instagram.com/fredimpossibleyt/">
             <a>
               <Image src={linkedInIcon}/>
             </a>
           </Link>
         </div>
+
+
       </div>
       
 

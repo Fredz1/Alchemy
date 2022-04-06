@@ -40,6 +40,7 @@ jspm_packages
 *.pdf
 .env*.local
 .env.development
+.env.production
 out
 
 service-worker.jscoverage

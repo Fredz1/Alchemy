@@ -79,7 +79,12 @@ const Footer = () => {
             &copy; Alchemy Financial Services 2022
           </p>
           <div className={style.franchiseLogo}>
-            <Image src={omFranchiseLogo} quality={75} layout='fill' objectFit='contain'/>
+            <Image 
+              src={omFranchiseLogo} 
+              quality={75} 
+              layout='fill' 
+              objectFit='contain'
+            />
           </div>
         </div>
 
