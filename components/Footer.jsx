@@ -53,12 +53,26 @@ const Footer = () => {
           </div>
 
           <div className={style.heading}>
+
             <h4>
               Social Media
             </h4>
-            <p>Facebook</p>
-            <p>Instagramme</p>
-            <p>Twitter</p>
+            <p>
+              <Link href='https://www.facebook.com/alchemy.oldmutual' _blank>
+                <a>
+                  Facebook
+                </a>
+              </Link>
+            </p>
+            
+            <p>
+              <Link href="https://www.instagram.com/alchemy.financialservices/">
+                <a>
+                  Instagramme
+                </a>
+              </Link>
+            </p>
+            
           </div>
 
           <div className={style.heading}>

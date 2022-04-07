@@ -15,7 +15,7 @@ const aboutus = () => {
   return (
     <div className={style.container}>
       <div className={style.bannerImage}>
-        <Image src={ceoImage} layout='fill' objectFit='cover' quality={50}/>
+        <Image src={ceoImage} layout='fill' objectFit='cover' quality={60}/>
       </div>
 
 

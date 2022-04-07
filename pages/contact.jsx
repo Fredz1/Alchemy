@@ -58,7 +58,7 @@ const contact = () => {
             Social Media
           </h3>
 
-          <Link href="https://www.facebook.com/fredwil25/" _blank>
+          <Link href="https://www.facebook.com/alchemy.oldmutual" _blank>
             <a>
               <Image src={facebookIcon}/>
             </a>

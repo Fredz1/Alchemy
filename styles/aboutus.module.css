@@ -21,7 +21,7 @@
 }
 
 .container > div > p:nth-child(odd){
-  background-color: rgba(42, 94, 140, 0.1);
+  font-weight: 500;
 }
 
 .bannerImage{
