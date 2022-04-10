@@ -25,15 +25,20 @@ const Footer = () => {
               Visit Us
             </h4>
             <p>
-              Stamform Bridge
-            </p>
-            <p>
-              Great Suburb
-            </p>
-            <p>
-              If you only knew
-            </p>
-            <p>7436</p>
+                Unit 3
+              </p>
+              <p>
+                Howard Terraces
+              </p>
+              <p>
+                Rose Innes Way
+              </p>
+              <p>
+                Pinelands
+              </p>
+              <p>
+                Cape Town
+              </p>
 
             <Link href='https://goo.gl/maps/Kr4FfZWMXYNzY5Kz5' _blank>
               <a>
@@ -80,10 +85,10 @@ const Footer = () => {
               Contact Us
             </h4>
             <p>
-              076 134 9290
+              <a href="tel:+27 027 134 9290">076 134 9290</a>
             </p>
             <p>
-              alchemy@alchemy.co.za
+              <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>
             </p>
           </div>
         </div>

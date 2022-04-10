@@ -72,12 +72,36 @@ const contact = () => {
           </Link>
 
 
-          <Link href="https://www.instagram.com/fredimpossibleyt/">
+          <Link href="https://www.instagram.com/alchemy.financialservices/">
             <a>
               <Image src={linkedInIcon}/>
             </a>
           </Link>
+
+          
         </div>
+
+        <div>
+          <h3>
+            <Link href='https://goo.gl/maps/Kr4FfZWMXYNzY5Kz5' _blank>
+              <a>
+                Directions
+              </a>
+            </Link>
+          </h3>
+            <p>
+              Unit 3
+            </p>
+            <p>
+              Howard Terraces
+            </p>
+            <p>
+              Rose Innes Way
+            </p>
+            <p>
+              Pinelands
+            </p>
+          </div>
 
 
       </div>

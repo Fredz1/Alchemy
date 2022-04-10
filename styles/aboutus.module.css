@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto;
   margin: 2em;
-  width: fit-content;
+  width: 100%;
   justify-content: space-around;
   margin: 3em auto;
   gap: 2em;
@@ -21,13 +21,14 @@
 }
 
 .container > div > p:nth-child(odd){
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .bannerImage{
   position: relative;
   width: 100%;
   height: 30vw;
+  background-color: rgba(114, 94, 92, 1);
 }
 
 @media all and (max-width: 768px){

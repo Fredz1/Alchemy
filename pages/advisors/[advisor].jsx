@@ -9,7 +9,7 @@ import list from '../../public/information/advisors.json'
 import style from '../../styles/advisorProfile.module.css'
 
 // Assets
-import placeholder from '../../public/assets/Advisors/holder.jpg'
+import placeholder from '../../public/assets/Advisors/placeholder.png'
 
 /* 
   HOOK
@@ -32,7 +32,7 @@ const advisor = () => {
 
       if (advisorData != -1) {
         setAdvisorInfo(list[advisorData])
-        setImage(require(`../../public/assets/Advisors/${list[advisorData].image}`))
+        /* setImage(require(`../../public/assets/Advisors/${list[advisorData].image}`)) */
       }
       
     },
@@ -45,18 +45,18 @@ const advisor = () => {
       <div className={style.left}>
 
         <div className={style.image}>
-          <Image src={image} layout='fill' objectFit='contain' placeholder='blur'/>
+          <Image src={placeholder} layout='fill' objectFit='contain' placeholder='blur'/>
         </div>
 
-        {/* Contact number */}
-        <div>
+        {/* Contact numbers */}
+        <div className={style.contact}>
           {
             advisorInfo && advisorInfo.contactInfo ? 
               advisorInfo.contactInfo.map(
                 (el, index) => {
                   return(
                     <div key={index}>
-                      {Object.keys(el)}: {Object.values(el)}
+                      {Object.keys(el)}:<br />{Object.values(el)}
                     </div>
                   )
                 }
@@ -85,7 +85,7 @@ const advisor = () => {
         </div>
 
         {/* Achievements */}
-        <div>
+        {/* <div>
           <h3>
             Achievments
           </h3>
@@ -105,7 +105,7 @@ const advisor = () => {
                 <>Watch this space</>
             }
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   )

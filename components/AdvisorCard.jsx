@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 
 // Style
 import style from '../styles/advisorCard.module.css'
+import placeholder from '../public/assets/Advisors/placeholder.png'
 
 
 /* 
@@ -22,7 +23,7 @@ const AdvisorCard = ({details, image}) => {
 
       <div className={style.image}>
         <Image 
-          src={require(`../public/assets/Advisors/${image}`)} 
+          src={placeholder/* require(`../public/assets/Advisors/${image}`) */} 
           layout='fill'  
           objectFit='contain'
         />
@@ -44,16 +45,3 @@ const AdvisorCard = ({details, image}) => {
 }
 
 export default AdvisorCard
-
-/* 
-{
-    "unique": "SAmerica",
-    "name": "Seraj",
-    "surname": "America",
-    "image": "serajHeadShot.png",
-    "years": 20,
-    "car": "Mercedes S-Class",
-    "position": "Senior Advisor",
-    "number": 555555555
-}
-*/

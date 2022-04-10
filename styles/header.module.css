@@ -21,11 +21,14 @@
   /* background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.8),transparent);
   backdrop-filter: blur(8px); */
   background-color: white;
+  border-bottom: 2px solid rgba(0, 153, 176, 0.25);
 }
 
 
 
-
+/* 
+  TAB BREAK
+*/
 @media all and (max-width: 768px){
   .headerContainer {
     /* background: linear-gradient(rgba(255,255,255,0.7), transparent);  */

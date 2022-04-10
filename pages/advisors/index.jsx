@@ -1,12 +1,16 @@
 // Modules
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Style
 import style from '../../styles/advisors.module.css'
 
 // Assets
 import list from '../../public/information/advisors'
+import bannerImage from '../../public/assets/media/team_image.jpg'
+
+
 
 // Components
 import AdvisorCard from '../../components/AdvisorCard'
@@ -16,9 +20,13 @@ const index = () => {
   return (
     <div className={style.container}>
       <div className={style.banner}>
-        <p className={style.bannerText}>
-          Meet Our Advisors
-        </p>
+        <div className={style.bannerImage}>
+          <Image layout='fill' objectFit='cover' src={bannerImage} />
+        </div>
+        {/* <p className={style.bannerText}>
+          Team
+        </p> */}
+        
       </div>
       <div className={style.advisorSection}>
         {

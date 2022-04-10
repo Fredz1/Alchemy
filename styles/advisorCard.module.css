@@ -1,14 +1,17 @@
 .container{
   display: grid;
-  grid-template-rows: 5fr 1fr 1fr 1fr;
+  grid-template-rows: 7fr 1fr 1fr 1fr;
   overflow: hidden;
   font-size: 1em; 
-  height: 10em;
-  justify-items: center;
+  height: auto;
+  justify-items: start;
   align-items: center;
-  width: 10em;
-  background-color: rgba(242, 190, 94, 0.5);
-  padding: 1vw 0.25vh;
+  width: inherit;
+  background-color: rgba(242, 206, 140, 1);
+}
+
+.container:hover{
+  box-shadow: inset 0px 0px 2px 3px rgba(42, 94, 140, 0.1);
 }
 
 .image{

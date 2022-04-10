@@ -40,9 +40,9 @@ const NavLinks = () => {
           <a aria-label='About Us'>About</a>
         </Link>
 
-        <Link href='/culture' onClick={() => setshowMenu(!showMenu)}>
+        {/* <Link href='/culture' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='Culture'>Culture</a>
-        </Link>
+        </Link> */}
 
         <Link href='/advisors' onClick={() => setshowMenu(!showMenu)}>
           <a aria-label='The Advisors'>Advisors</a>
