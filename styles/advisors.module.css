@@ -3,6 +3,15 @@
   height: fit-content;
 }
 
+.container h2{
+  text-align: center;
+  font-size: 2em;
+}
+
+.advisorSectionBlock{
+  margin: 2em 0;
+}
+
 .banner{
   height: 40vh;
   background-color: rgba(42, 94, 140, 1);
@@ -31,7 +40,7 @@
   row-gap: 5vw;
   height: max-content;
   width: 85%;
-  margin: 10em auto;
+  margin: 5em auto;
   align-content: center;
   justify-content: center;
   justify-items: center;
@@ -52,7 +61,7 @@
   }
 
   .advisorSection{
-    grid-template-columns: repeat(auto-fit, minmax(75vw,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw,1fr));
     margin: 0.5em auto;
     gap: 0.5em;
     

@@ -28,20 +28,83 @@ const index = () => {
         </p> */}
         
       </div>
-      <div className={style.advisorSection}>
-        {
-          list? 
-            list.map(
-              el  =>  {
-                return(
-                  <AdvisorCard details={el} key={el.unique} image={el.image} />
-                )
-              }
-            )
-          :
-          ' nothing to show'
-        }
+      <div className={style.advisorSectionBlock}>
+
+        <h2>
+          Franchise Principle
+        </h2>
+
+        <div className={style.advisorSection}>
+          {
+            list? 
+              list.map(
+                el  =>  {
+                  if(el.position === 'Franchise Principle'){
+                    return(
+                      <AdvisorCard details={el} key={el.unique} image={el.image} />
+                    )
+                  }
+                  
+                }
+              )
+            :
+            ' nothing to show'
+          }
+        </div>
+        
       </div>
+      
+
+      <div>
+
+        <h2>
+          Advisors
+        </h2>
+
+        <div className={style.advisorSection}>
+          {
+            list? 
+              list.map(
+                el  =>  {
+                  if(el.position === 'Advisor'){
+                    return(
+                      <AdvisorCard details={el} key={el.unique} image={el.image} />
+                    )
+                  }
+                }
+              )
+            :
+            ' nothing to show'
+          }
+        </div>
+
+      </div>
+
+      <div>
+
+        <h2>
+          Support Staff
+        </h2>
+
+        <div className={style.advisorSection}>
+          {
+            list? 
+              list.map(
+                el  =>  {
+                  if(el.position === 'Support Staff'){
+                    return(
+                      <AdvisorCard details={el} key={el.unique} image={el.image} />
+                    )
+                  }
+                }
+              )
+            :
+            ' nothing to show'
+          }
+        </div>
+
+      </div>
+
     </div>
   )
 }

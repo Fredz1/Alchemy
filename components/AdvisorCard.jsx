@@ -19,7 +19,10 @@ const AdvisorCard = ({details, image}) => {
   const Router = useRouter()
 
   return (
-    <div className={style.container}>
+    <div 
+      className={style.container} 
+      onClick={() => Router.push(`advisors/${details.unique}`)}
+    >
 
       <div className={style.image}>
         <Image 
@@ -36,10 +39,7 @@ const AdvisorCard = ({details, image}) => {
       <div className={style.info}>
         {details.position}
       </div>
-
-      <button onClick={() => Router.push(`advisors/${details.unique}`)}>
-        Profile
-      </button>
+      
     </div>
   )
 }

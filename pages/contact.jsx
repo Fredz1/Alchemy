@@ -9,7 +9,7 @@ import style from '../styles/contact.module.css'
 
 // Assets
 import facebookIcon from '../public/assets/icons/socialMediaIcons/facebookSocialMediaColor.png'
-import linkedInIcon from '../public/assets/icons/socialMediaIcons/linkedinSocialMediaColor.png'
+import instagramIcon from '../public/assets/icons/socialMediaIcons/instagramIcon.png'
 
 const contact = () => {
 
@@ -52,31 +52,27 @@ const contact = () => {
           </p>
         </div>
 
-        <div>
+        <div className={style.socialMedia}>
 
           <h3>
             Social Media
           </h3>
+          
+          <div>
+            <Link href="https://www.facebook.com/alchemy.oldmutual" _blank>
+              <a>
+                <Image src={facebookIcon}/>
+              </a>
+            </Link>
+          </div>
 
-          <Link href="https://www.facebook.com/alchemy.oldmutual" _blank>
-            <a>
-              <Image src={facebookIcon}/>
-            </a>
-          </Link>
-
-          <Link href="https://www.linkedin.com/in/frederick-williams-b2215730/">
-            <a>
-              <Image src={linkedInIcon}/>
-            </a>
-            
-          </Link>
-
-
-          <Link href="https://www.instagram.com/alchemy.financialservices/">
-            <a>
-              <Image src={linkedInIcon}/>
-            </a>
-          </Link>
+          <div>
+            <Link href="https://www.instagram.com/alchemy.financialservices/">
+              <a>
+                <Image src={instagramIcon}/>
+              </a>
+            </Link>
+          </div>
 
           
         </div>
@@ -110,13 +106,15 @@ const contact = () => {
       <div className={style.form}>
         <div>
           <h3>
-            Enter your details
+            Send us a message
           </h3> 
         </div>
         <div>
+
           <input type="text" placeholder='You full name' value={name} onChange={e => setName(e.target.value)}/>
           <input type="email" placeholder='your@email.com' value={email} onChange={e => setEmail(e.target.value)}/>
           <input type="tel" placeholder='555 555 5555' value={phoneNum} onChange={e => setPhoneNum(e.target.value)}/>
+
         </div>
         <input type="textarea" placeholder='Write your message here' value={message} onChange={e => setMessage(e.target.value)}/>
         

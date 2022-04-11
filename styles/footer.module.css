@@ -96,8 +96,7 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr;
-    height: 2em;
-    
+    height: 10em;
     width: 100%;
     font-size: 1.6vw;
   }

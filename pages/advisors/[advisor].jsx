@@ -69,11 +69,19 @@ const advisor = () => {
       </div>
 
       <div className={style.right}>
-        {/* About section */}
         <div>
           <h3>
-            About 
+            {advisorInfo.name} {advisorInfo.surname}
           </h3>
+          <h4>
+            {advisorInfo.position}
+          </h4>
+        </div>
+        {/* About section */}
+        <div>
+          <h5>
+            About 
+          </h5>
           <p>
             {
               advisorInfo && advisorInfo.about ?

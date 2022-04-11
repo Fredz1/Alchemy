@@ -9,24 +9,76 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(max-content, 20vw));
   justify-content: center;
-  gap: 4em;
+  gap: 3em;
 }
 
 .details > *{
-  background-color: rgba(114, 2, 2, 1);
-  color: white;
+  background-color: rgba(42, 94, 140, 0.1);
+  color: black;
   font-size: 1.1rem;
+  padding: 1em;
 }
 
 
 .details > * > *{
-  width: 50%;
   margin: 0 auto;
+}
+
+.socialMedia > div{
+  position: relative;
+  width: 32px;
+  max-width: 32px;
 }
 
 .form{
   display: grid;
   grid-template-rows: 1fr 1fr 4fr 1fr;
   align-content: center;
-  margin: 0 auto;
+  justify-items: center;
+  gap: 1em;
+  margin: 2em auto;
+  background-color: rgba(114, 2, 2, 0.1);
+  padding: 1em;
+}
+
+.form > input{
+  width: 100%;
+}
+
+.form > button{
+  background-color: white;
+  width: 100%;
+}
+
+.form > button:hover{
+  background-color: rgba(42, 94, 140, 1);
+  width: 100%;
+}
+
+.form > div > h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+@media all and (max-width: 768px){
+  .details{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 50vw));
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .form{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+    margin: 0.5em auto;
+    background-color: rgba(114, 2, 2, 0.1);
+    padding: 1em;
+  }
 }
