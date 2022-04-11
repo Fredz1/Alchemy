@@ -35,9 +35,8 @@
 
 .advisorSection{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(10vw, 15vw));
-  grid-template-rows: repeat(auto-fit, max-content);
-  row-gap: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 15vw));
+  gap: 2em;
   height: max-content;
   width: 85%;
   margin: 5em auto;
@@ -55,13 +54,15 @@
     position: relative;
     top: 50%;
     left: 50%;
-    font-size: 5vw;
+    font-size: 14px;
     width: max-content;
     transform: translateX(-50%) translateY(-75%); 
+
   }
 
   .advisorSection{
-    grid-template-columns: repeat(auto-fit, minmax(40vw,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px ,250px));
+    grid-template-rows: repeat(auto-fit, 2fr);
     margin: 0.5em auto;
     gap: 0.5em;
     

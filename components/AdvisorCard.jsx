@@ -35,11 +35,6 @@ const AdvisorCard = ({details, image}) => {
       <div className={style.info}>
         {details.name} {details.surname}
       </div>
-
-      <div className={style.info}>
-        {details.position}
-      </div>
-      
     </div>
   )
 }

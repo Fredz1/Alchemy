@@ -1,15 +1,16 @@
 .container{
   display: grid;
-  grid-template-rows: 7fr 1fr 1fr;
+  grid-template-rows: 200px 2fr;
   overflow: hidden;
   font-size: 1em; 
-  height: auto;
+  height: 100%;
   justify-items: start;
   align-items: center;
-  width: inherit;
-  row-gap: 1em;
+  width: 100%;
+  row-gap: 0.25em;
   background-color: rgba(242, 206, 140, 1);
   padding: 5px;
+  font-size: 14px;
 }
 
 .container:hover{
