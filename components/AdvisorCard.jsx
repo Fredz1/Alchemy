@@ -26,7 +26,7 @@ const AdvisorCard = ({details, image}) => {
 
       <div className={style.image}>
         <Image 
-          src={require(`../public/assets/Advisors/${image}` || placeholder)} 
+          src={placeholder/* require(`../public/assets/Advisors/${image}` || placeholder) */} 
           layout='fill'  
           objectFit='contain'
         />
