@@ -36,7 +36,7 @@
   display: grid;
   grid-template-rows: max-content 5fr;
   row-gap: 3em;
-  background-color: rgba(114, 94, 92, 1);;
+  background-color: rgba(114, 94, 92, 1);
   color: white;
 }
 
@@ -53,12 +53,14 @@
 
 .right h5{
   font-size: 1.25em;
+  text-align: center;
   background-color: rgba(114, 94, 92, 1);
 }
 
 .right p{
   font-size: 1em;
-  max-width: 40ch;
+  max-width: 50ch;
+  margin: 1em 2em;
 }
 
 /* 

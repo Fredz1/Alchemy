@@ -1,6 +1,6 @@
 .container{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: max-content 1fr;
 
 }
 
@@ -15,7 +15,6 @@
 .details > *{
   background-color: rgba(42, 94, 140, 0.1);
   color: black;
-  font-size: 1.1rem;
   padding: 1em;
 }
 
@@ -24,41 +23,51 @@
   margin: 0 auto;
 }
 
+.details h3{
+  margin-bottom: 1em;
+}
+
 .socialMedia > div{
-  position: relative;
-  width: 32px;
-  max-width: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 32px);
+  gap: 2em;
+  justify-content: center;
+  justify-items: center;
 }
 
 .form{
   display: grid;
   grid-template-rows: 1fr 1fr 4fr 1fr;
   align-content: center;
+  justify-content: center;
   justify-items: center;
   gap: 1em;
-  margin: 2em auto;
-  background-color: rgba(114, 2, 2, 0.1);
-  padding: 1em;
+  width: 95%;
+  margin: 5em auto;
+  background-color: rgba(42, 94, 140, 0.1);
+  text-align: center;
+  padding: 2em 0;
 }
 
-.form > input{
-  width: 100%;
+.form  h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form input{
+  width: 75%;
 }
 
 .form > button{
   background-color: white;
-  width: 100%;
+  width: 75%;
 }
 
 .form > button:hover{
   background-color: rgba(42, 94, 140, 1);
-  width: 100%;
 }
 
-.form > div > h3{
-  text-align: center;
-  font-size: 1.5rem;
-}
+
 
 
 @media all and (max-width: 768px){
@@ -77,8 +86,6 @@
     align-items: center;
     justify-items: center;
     gap: 1em;
-    margin: 0.5em auto;
-    background-color: rgba(114, 2, 2, 0.1);
-    padding: 1em;
+    margin: 1em auto;
   }
 }

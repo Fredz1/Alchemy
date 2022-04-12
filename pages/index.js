@@ -1,10 +1,10 @@
 // Modules
 import React from 'react'
-import ContactBanner from '../components/ContactBanner'
 
 // Components
 import MainBanner from '../components/MainBanner'
 import Solutions from '../components/Solutions'
+import ContactBanner from '../components/ContactBanner'
 
 /* 
   HOOK

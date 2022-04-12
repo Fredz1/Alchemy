@@ -17,6 +17,8 @@ import logo from '../public/assets/media/alchemyFS.png'
 const Header = () => {
 
   return (
+    
+      <div className={style.wrapper}>
     <div className={style.headerContainer}>
       <div >
         <Link href='/' >
@@ -26,6 +28,7 @@ const Header = () => {
         </Link>
       </div>
       <NavLinks />
+    </div>
     </div>
   )
 }

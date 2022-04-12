@@ -57,33 +57,30 @@ const contact = () => {
           <h3>
             Social Media
           </h3>
-          
           <div>
-            <Link href="https://www.facebook.com/alchemy.oldmutual" _blank>
-              <a>
-                <Image src={facebookIcon}/>
-              </a>
-            </Link>
-          </div>
 
-          <div>
-            <Link href="https://www.instagram.com/alchemy.financialservices/">
-              <a>
-                <Image src={instagramIcon}/>
-              </a>
-            </Link>
-          </div>
+            <div>
+              <Link href="https://www.facebook.com/alchemy.oldmutual" _blank>
+                <a>
+                  <Image src={facebookIcon}/>
+                </a>
+              </Link>
+            </div>
 
+            <div>
+              <Link href="https://www.instagram.com/alchemy.financialservices/">
+                <a>
+                  <Image src={instagramIcon}/>
+                </a>
+              </Link>
+            </div>
+          </div>
           
         </div>
 
         <div>
           <h3>
-            <Link href='https://goo.gl/maps/Kr4FfZWMXYNzY5Kz5' _blank>
-              <a>
-                Directions
-              </a>
-            </Link>
+            Directions
           </h3>
             <p>
               Unit 3
@@ -97,6 +94,13 @@ const contact = () => {
             <p>
               Pinelands
             </p>
+            <p>
+              <Link href='https://goo.gl/maps/Kr4FfZWMXYNzY5Kz5' _blank>
+                <a>
+                  click here for directions
+                </a>
+              </Link>
+            </p>            
           </div>
 
 
@@ -104,11 +108,11 @@ const contact = () => {
       
 
       <div className={style.form}>
-        <div>
-          <h3>
-            Send us a message
-          </h3> 
-        </div>
+
+        <h3>
+          Send us a message
+        </h3> 
+
         <div>
 
           <input type="text" placeholder='You full name' value={name} onChange={e => setName(e.target.value)}/>
@@ -116,8 +120,14 @@ const contact = () => {
           <input type="tel" placeholder='555 555 5555' value={phoneNum} onChange={e => setPhoneNum(e.target.value)}/>
 
         </div>
-        <input type="textarea" placeholder='Write your message here' value={message} onChange={e => setMessage(e.target.value)}/>
-        
+
+        <textarea 
+          type="textarea" 
+          placeholder='Write your message here' 
+          value={message} 
+          onChange={e => setMessage(e.target.value)}
+          rows='5'
+        />
         
         <button type="submit" onClick={() => sendMessage()}>Submit</button>
 

@@ -1,9 +1,13 @@
-// Components
+// modules
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import list from '../../public/information/advisors.json' 
+import Link from 'next/link'
+
+// components
+import AdvisorContactCard from '../../components/AdvisorContactCard'
 
 // Style
 import style from '../../styles/advisorProfile.module.css'
@@ -56,11 +60,12 @@ const advisor = () => {
                 (el, index) => {
                   return(
                     <div key={index}>
-                      {Object.keys(el)}:<br />{Object.values(el)}
+                      <AdvisorContactCard info={el} />
                     </div>
                   )
                 }
-              ):
+              )
+              :
               <div>
                 Please contact: 021 276 1279
               </div>
@@ -73,9 +78,9 @@ const advisor = () => {
           <h3>
             {advisorInfo.name} {advisorInfo.surname}
           </h3>
-          <h4>
+          <h5>
             {advisorInfo.position}
-          </h4>
+          </h5>
         </div>
         {/* About section */}
         <div>
