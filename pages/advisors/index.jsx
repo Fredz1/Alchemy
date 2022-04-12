@@ -23,7 +23,7 @@ const index = () => {
         <div className={style.bannerImage}>
           <Image layout='fill' objectFit='cover' src={bannerImage} />
         </div>
-        
+
       </div>
       <div className={style.advisorSectionBlock}>
 

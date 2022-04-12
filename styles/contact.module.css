@@ -7,7 +7,7 @@
 .details{
   margin-top: 2em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 20vw));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 20vw));
   justify-content: center;
   gap: 3em;
 }

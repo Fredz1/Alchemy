@@ -1,10 +1,3 @@
-.wrapper{
-  position: sticky;
-  min-width: inherit;
-  min-height: inherit;
-}
-
-
 .headerContainer {
   color: black;
   font-size: 1.0em;

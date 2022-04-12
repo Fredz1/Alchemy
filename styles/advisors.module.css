@@ -65,6 +65,7 @@
     grid-template-rows: repeat(auto-fit, 2fr);
     margin: 0.5em auto;
     gap: 0.5em;
+    row-gap: 2em;
     
   }
 }

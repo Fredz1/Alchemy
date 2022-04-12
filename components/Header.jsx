@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     
-      <div className={style.wrapper}>
+    <div className={style.wrapper}>
     <div className={style.headerContainer}>
       <div >
         <Link href='/' >

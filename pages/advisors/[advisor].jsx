@@ -90,7 +90,15 @@ const advisor = () => {
           <p>
             {
               advisorInfo && advisorInfo.about ?
-                Object.values(advisorInfo.about)
+                Object.values(advisorInfo.about).map(
+                  (el, index) => {
+                    return (
+                      <p key={index}>
+                        {el}
+                      </p>
+                    )
+                  }
+                )
                 :
                 <>Nothing here</>
             }
