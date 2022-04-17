@@ -4,8 +4,8 @@
 }
 
 .mainBannerContainer{
-  max-height: 50vh;
-  height: 50vw;
+  max-height: 75vh;
+  height: 75vw;
   background-image: url('../public/assets/media/alchemyBanner.jpg');
   /* background-image: url('../public/assets/media/Vitruve_Luc_Viatour_web.png'); */
   background-repeat: no-repeat;

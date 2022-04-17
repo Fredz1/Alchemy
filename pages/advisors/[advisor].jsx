@@ -1,10 +1,7 @@
 // modules
 import React from 'react'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import list from '../../public/information/advisors.json' 
-import Link from 'next/link'
+import axios from 'axios'
 
 // components
 import AdvisorContactCard from '../../components/AdvisorContactCard'
@@ -18,49 +15,34 @@ import placeholder from '../../public/assets/Advisors/placeholder.png'
 /* 
   HOOK
 */
-const advisor = () => {
-
-  // get Route
-  const {query: { advisor }} = useRouter()
-
-  const [advisorInfo, setAdvisorInfo] = useState('Loading')
-  const [image, setImage] = useState(placeholder)
-
-  // Set adivor information on load
-  useEffect(
-    () => {
-
-      const advisorData = list.findIndex(
-        el => el.unique === advisor
-      )
-
-      if (advisorData != -1) {
-        setAdvisorInfo(list[advisorData])
-        /* setImage(require(`../../public/assets/Advisors/${list[advisorData].image}`)) */
-      }
-      
-    },
-    [advisor]
-  )
-  
+const advisor = (props) => {
 
   return (
     <div className={style.container}>
       <div className={style.left}>
 
         <div className={style.image}>
-          <Image src={placeholder} layout='fill' objectFit='contain' placeholder='blur'/>
+          <Image 
+            src={
+              props.image.data ?
+                `https://cms.fredmadethis.co.za${props.image.data.attributes.url}`
+                :
+                placeholder
+            } 
+            layout='fill' 
+            objectFit='contain'
+          />
         </div>
 
         {/* Contact numbers */}
         <div className={style.contact}>
           {
-            advisorInfo && advisorInfo.contactInfo ? 
-              advisorInfo.contactInfo.map(
+            props.contact ? 
+              props.contact.map(
                 (el, index) => {
                   return(
                     <div key={index}>
-                      <AdvisorContactCard info={el} />
+                      <AdvisorContactCard value={el} />
                     </div>
                   )
                 }
@@ -73,63 +55,90 @@ const advisor = () => {
         </div>
       </div>
 
+      {/* Name Surname About */}
       <div className={style.right}>
         <div>
           <h3>
-            {advisorInfo.name} {advisorInfo.surname}
+            {props.name} {props.surname}
           </h3>
           <h5>
-            {advisorInfo.position}
+            {props.Role}
           </h5>
         </div>
-        {/* About section */}
         <div>
           <h5>
             About 
           </h5>
           <p>
             {
-              advisorInfo && advisorInfo.about ?
-                Object.values(advisorInfo.about).map(
-                  (el, index) => {
-                    return (
-                      <p key={index}>
-                        {el}
-                      </p>
-                    )
-                  }
-                )
+              props.about ?
+                props.about
                 :
                 <>Nothing here</>
             }
           </p>
         </div>
-
-        {/* Achievements */}
-        {/* <div>
-          <h3>
-            Achievments
-          </h3>
-          <p>
-            {
-              advisorInfo && advisorInfo.awards ?
-                advisorInfo.awards.map(
-                  (el, index) => {
-                    return(
-                      <div>
-                        {el}
-                      </div>
-                    )
-                  }
-                )
-                :
-                <>Watch this space</>
-            }
-          </p>
-        </div> */}
       </div>
     </div>
   )
 }
+
+export const getStaticPaths = async () => {
+
+  const {data} = await axios.get(
+    'https://cms.fredmadethis.co.za/api/advisors?populate=*'
+  )
+
+  const paths = data.data.map(
+    el => {
+      return (
+        {
+          params : 
+            {
+              advisor: JSON.stringify(el.id)
+            }
+            
+        }
+      )
+    }
+  )
+
+  return{
+    paths : [
+      ...paths
+    ],
+    fallback: false
+  }
+}
+
+
+
+export const getStaticProps = async ( { params } ) => {
+  const advisor = await axios.get(
+    `https://cms.fredmadethis.co.za/api/advisors/${params.advisor}?populate=*`
+  )
+
+  // console.log(advisor.data.data.attributes.ProfileImage.data.attributes.url)
+  // console.log(advisor.data.data)
+
+  const buildInfo = {
+    "name": advisor.data.data.attributes.name ?? 'empty',
+    "surname": advisor.data.data.attributes.surname ?? 'empty',
+    "about": advisor.data.data.attributes.about ?? 'empty',
+    "image": advisor.data.data.attributes.ProfileImage ?? advisor.data.data.attributes.ProfileImage.data.attributes.url,
+    "Role" : advisor.data.data.attributes.Role ?? "empty",
+    "contact" : [
+      {"Email": advisor.data.data.attributes.Email ?? 'empty'},
+      {"Phone": advisor.data.data.attributes.cellNumber ?? 'empty'},
+      {"LinkedIn": advisor.data.data.attributes.LinkedIn ?? 'empty'}
+    ]
+  }
+
+  return{
+    props:
+      buildInfo
+  }
+}
+
 
 export default advisor

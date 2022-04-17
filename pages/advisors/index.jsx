@@ -1,22 +1,22 @@
 // Modules
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import axios from 'axios'
 
 // Style
 import style from '../../styles/advisors.module.css'
 
 // Assets
-import list from '../../public/information/advisors'
 import bannerImage from '../../public/assets/media/team_image.jpg'
-
-
 
 // Components
 import AdvisorCard from '../../components/AdvisorCard'
 
-// HOOK
-const index = () => {
+/*
+* HOOK
+*/
+const index = ({franchisePrinciple, advisors, supportStaff}) => {
+
   return (
     <div className={style.container}>
       <div className={style.banner}>
@@ -33,15 +33,12 @@ const index = () => {
 
         <div className={style.advisorSection}>
           {
-            list? 
-              list.map(
+            franchisePrinciple? 
+              franchisePrinciple.map(
                 el  =>  {
-                  if(el.position === 'Franchise Principle'){
-                    return(
-                      <AdvisorCard details={el} key={el.unique} image={el.image} />
-                    )
-                  }
-                  
+                  return(
+                    <AdvisorCard details={el} key={el.id} />
+                  )
                 }
               )
             :
@@ -60,18 +57,16 @@ const index = () => {
 
         <div className={style.advisorSection}>
           {
-            list? 
-              list.map(
-                el  =>  {
-                  if(el.position === 'Advisor'){
-                    return(
-                      <AdvisorCard details={el} key={el.unique} image={el.image} />
-                    )
-                  }
+            advisors? 
+              advisors.map(
+                el => {
+                  return(
+                    <AdvisorCard details={el} key={el.id} />
+                  )
                 }
               )
-            :
-            ' nothing to show'
+              :
+              ' nothing to show'
           }
         </div>
 
@@ -85,18 +80,16 @@ const index = () => {
 
         <div className={style.advisorSection}>
           {
-            list? 
-              list.map(
+            supportStaff? 
+              supportStaff.map(
                 el  =>  {
-                  if(el.position === 'Support Staff'){
-                    return(
-                      <AdvisorCard details={el} key={el.unique} image={el.image} />
-                    )
-                  }
+                  return(
+                    <AdvisorCard details={el} key={el.id} />
+                  )
                 }
               )
             :
-            ' nothing to show'
+            'nothing to show'
           }
         </div>
 
@@ -104,6 +97,38 @@ const index = () => {
 
     </div>
   )
+}
+
+
+
+export const getStaticProps = async () => {
+  const response = await axios.get(
+    'https://cms.fredmadethis.co.za/api/advisors?populate=*'
+  )
+
+  const franchisePrincipleFilter = []
+  const advisorsfilter = []
+  const supportStaffFilter = []
+
+  if(response.data.data){
+    response.data.data.forEach(
+      el => {
+        el.attributes.Role == 'Franchise Principle' ? franchisePrincipleFilter.push(el) :
+        el.attributes.Role == 'Advisor' ? advisorsfilter.push(el) : 
+        el.attributes.Role == 'Assistant' ?  supportStaffFilter.push(el) : 
+        el.attributes.Role == 'Staff' ? supportStaffFilter.push(el) :
+        console.log('No Role')
+      }
+    )
+  }
+
+  return {
+    props:{
+      "franchisePrinciple" : franchisePrincipleFilter,
+      "advisors" : advisorsfilter,
+      "supportStaff" : supportStaffFilter
+    }
+  }
 }
 
 export default index

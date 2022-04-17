@@ -1,0 +1,23 @@
+GET http://www.fredmadethis.co.za
+
+
+
+GET https://cms.fredmadethis.co.za/api/advisors
+{
+  params: {
+    name, 
+    surname,
+    image
+  }
+}
+
+GET http://alchemy.fredmadethis.co.za
+
+
+GET http://0.0.0.0
+
+POST https://cms.fredmadethis.co.za/api/advisors{
+  "data" : {
+    "name" : 
+  }
+}

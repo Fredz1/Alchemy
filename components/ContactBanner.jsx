@@ -7,7 +7,7 @@ import Link from 'next/link'
 import style from '../styles/contactBanner.module.css'
 
 // Assets
-import contactPic from '../public/assets/media/contactimage.jpg'
+import contactPic from '../public/assets/media/contactimage.jpg' 
 import mailIcon from '../public/assets/icons/Mail-64.png'
 
 /* 
