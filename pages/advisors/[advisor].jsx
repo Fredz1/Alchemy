@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import axios from 'axios'
+import ReactMarkdown from 'react-markdown'
 
 // components
 import AdvisorContactCard from '../../components/AdvisorContactCard'
@@ -69,14 +70,14 @@ const advisor = (props) => {
           <h5>
             About 
           </h5>
-          <p>
+          <div>
             {
               props.about ?
-                props.about
+                <ReactMarkdown children={props.about}/>
                 :
                 <>Nothing here</>
             }
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -124,7 +125,7 @@ export const getStaticProps = async ( { params } ) => {
   const buildInfo = {
     "name": advisor.data.data.attributes.name ?? 'empty',
     "surname": advisor.data.data.attributes.surname ?? 'empty',
-    "about": advisor.data.data.attributes.about ?? 'empty',
+    "about": advisor.data.data.attributes.About ?? 'empty',
     "image": advisor.data.data.attributes.ProfileImage ?? advisor.data.data.attributes.ProfileImage.data.attributes.url,
     "Role" : advisor.data.data.attributes.Role ?? "empty",
     "contact" : [
