@@ -19,8 +19,9 @@
   max-width: 100vw;
   height: inherit;
   min-height: 100px;
-  background-color: rgba(114, 94, 92, 0.1);
+  background-color: rgba(42, 94, 140, 0.25);
 }
+
 
 .contact{
   display: grid;
@@ -29,7 +30,7 @@
   height: fit-content;
   justify-items: start;
   row-gap: 1em;
-  background-color: rgba(114, 94, 92, 0.1);
+  background-color: rgba(42, 94, 140, 0.25);
   padding: 1em;
 }
 
@@ -37,7 +38,7 @@
   display: grid;
   grid-template-rows: max-content 5fr;
   row-gap: 3em;
-  background-color: rgba(114, 94, 92, 0.1);
+  background-color: rgba(42, 94, 140, 0.25);
   color: black;
 }
 
