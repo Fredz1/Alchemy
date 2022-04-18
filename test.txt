@@ -21,3 +21,5 @@ POST https://cms.fredmadethis.co.za/api/advisors{
     "name" : 
   }
 }
+
+GET https://cms.fredmadethis.co.za/api/blogs?populate=*

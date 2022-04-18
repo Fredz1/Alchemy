@@ -30,6 +30,11 @@ const AdvisorContactCard = (props) => {
               0{Object.values(props.value)[0]}
             </a>
           :
+          Object.keys(props.value)[0] == 'WhatsApp' ?
+            <a href={`https://wa.me/+270${Object.values(props.value)[0]}`}>
+              0{Object.values(props.value)[0]}
+            </a>
+          :
           Object.values(props.value)[0]
       }
     </div>

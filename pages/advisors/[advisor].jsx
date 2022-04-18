@@ -131,7 +131,8 @@ export const getStaticProps = async ( { params } ) => {
     "contact" : [
       {"Email": advisor.data.data.attributes.Email ?? 'empty'},
       {"Phone": advisor.data.data.attributes.cellNumber ?? 'empty'},
-      {"LinkedIn": advisor.data.data.attributes.LinkedIn ?? 'empty'}
+      {"LinkedIn": advisor.data.data.attributes.LinkedIn ?? 'empty'},
+      {"WhatsApp" : advisor.data.data.attributes.cellNumber ?? 'empty'}
     ]
   }
 

@@ -48,7 +48,11 @@ const contact = () => {
             Email
           </h3>
           <p>
-            <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a>
+            <a 
+              href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me."
+            >
+              alchemy@alchemy.co.za
+            </a>
           </p>
         </div>
 

@@ -98,12 +98,14 @@ const Footer = () => {
             &copy; Alchemy Financial Services 2022
           </p>
           <div className={style.franchiseLogo}>
-            <Image 
-              src={omFranchiseLogo} 
-              quality={75} 
-              layout='fill' 
-              objectFit='contain'
-            />
+            <a href='www.oldmutual.co.za' _blank='true'>
+              <Image 
+                src={omFranchiseLogo} 
+                quality={75} 
+                layout='fill' 
+                objectFit='contain'
+              />
+            </a>
           </div>
         </div>
 

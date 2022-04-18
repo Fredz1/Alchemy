@@ -58,7 +58,7 @@ const ContactBanner = () => {
             <Image src={mailIcon} layout='fill' objectFit='contain' />
           </div>
           <p>
-            Click <Link href="/contact"><a> here </a></Link> to use our contact form
+            Click <Link href="/contact"><a>here</a></Link> to use our contact form
           </p>
         </div>
 
