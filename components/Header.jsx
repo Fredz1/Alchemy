@@ -23,7 +23,7 @@ const Header = () => {
       <div >
         <Link href='/' >
           <a>
-            <Image src={logo} quality={10} className={style.logoImage} priority/>
+            <Image src={logo} quality={10} className={style.logoImage} alt="Alchemy home" priority />
           </a>
         </Link>
       </div>

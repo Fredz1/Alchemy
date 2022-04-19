@@ -1,7 +1,8 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: fit-content;
+  height: 30vw;
+  min-height: fit-content;
   font-size: 1.2em;
   gap: 1em;
   background-color: rgba(114, 94, 92, 1);

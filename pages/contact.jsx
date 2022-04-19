@@ -133,7 +133,7 @@ const contact = () => {
           rows='5'
         />
         
-        <button type="submit" onClick={() => sendMessage()}>Submit</button>
+        <button type="submit" onClick={() => sendMessage()}>Send Message</button>
 
       </div>
 

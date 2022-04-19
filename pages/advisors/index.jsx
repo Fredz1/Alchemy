@@ -110,6 +110,11 @@ export const getStaticProps = async () => {
   const advisorsfilter = []
   const supportStaffFilter = []
 
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
+
   if(response.data.data){
     response.data.data.forEach(
       el => {
