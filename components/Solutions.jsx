@@ -32,9 +32,7 @@ const Solutions = () => {
           <h3>
             Life Cover
           </h3>
-          {/* <div className={style.image}>
-            <Image src={sign} layout='fill' objectFit='contain'/>
-          </div> */}
+          
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque maxime aut recusandae adipisci cupiditate earum ad unde. Ipsum, magni? Ex voluptate suscipit voluptas? Laudantium!
           </p>

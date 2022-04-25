@@ -1,6 +1,7 @@
 // modules
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 
 
 // Style
@@ -14,6 +15,13 @@ const aboutus = () => {
 
   return (
     <div className={style.container}>
+      <>
+        <Head>
+          <title>
+            About Alchemy Financial Services            
+          </title>
+        </Head>
+      </>
       <div className={style.bannerImage}>
         <Image src={ceoImage} layout='fill' objectFit='cover' quality={60}/>
       </div>

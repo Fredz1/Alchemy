@@ -4,6 +4,7 @@ import style from '../styles/culture.module.css'
 // modules
 import axios from 'axios'
 import Image from 'next/image'
+import Head from 'next/head'
 
 /**
  * HOOK
@@ -13,21 +14,35 @@ const culture = (props) => {
   return (
     <div className={style.container}>
 
-      {
-        props.imageData.map(
-          el => {
-            return (
-              <div key={el.hash} className={style.image}>
-                <Image 
-                  src={`https://cms.fredmadethis.co.za${el.url}`} 
-                  layout='fill'
-                  objectFit='contain'
-                />
-              </div>
-            )
-          }
-        )
-      }
+      <>
+        <Head>
+          <title>
+            Alchemy Culture            
+          </title>
+        </Head>
+      </>
+
+      <div className={style.banner}>
+
+      </div>
+      {/* Image Area */}
+      <div>
+        {
+          props.imageData.map(
+            el => {
+              return (
+                <div key={el.hash} className={style.image}>
+                  <Image 
+                    src={`https://cms.fredmadethis.co.za${el.url}`} 
+                    layout='fill'
+                    objectFit='contain'
+                  />
+                </div>
+              )
+            }
+          )
+        }
+      </div>
       
     </div>
   )

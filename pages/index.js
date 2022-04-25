@@ -1,5 +1,6 @@
 // Modules
 import React from 'react'
+import Head from 'next/head'
 
 // Components
 import MainBanner from '../components/MainBanner'
@@ -12,6 +13,14 @@ import ContactBanner from '../components/ContactBanner'
 const index = () => {
   return (
     <div>
+      <>
+        <Head>
+          <title>
+            Alchemy Financial Services
+          </title>
+          <meta name='description' content='Alchemy Financial Services, Investment Insurance Life cover advisors.'/>
+        </Head>
+      </>
       <MainBanner />
       <Solutions />
       <ContactBanner />

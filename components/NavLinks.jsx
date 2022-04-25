@@ -49,7 +49,7 @@ const NavLinks = () => {
         </Link>
 
         <Link href='/contact' onClick={() => setshowMenu(!showMenu)}>
-          <a aria-label='contact'>Contact</a>
+          <a aria-label='contact'>Message Us</a>
         </Link>
         
       </div>

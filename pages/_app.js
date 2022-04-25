@@ -7,6 +7,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import { GTM_ID, pageview } from '../util/gtm'
 import { useEffect } from 'react'
+import Head from 'next/head'
 
 // Style
 import '../styles/globals.css'
@@ -25,9 +26,8 @@ const MainPage = ( { Component, pageProps } ) => {
   }, [router.events])
   
   return (
-    
-
       <HomeLayout pageProps>
+
         <>
           <Script
             strategy="afterInteractive"

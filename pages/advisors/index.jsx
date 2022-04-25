@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import axios from 'axios'
+import Head from 'next/head'
 
 // Style
 import style from '../../styles/advisors.module.css'
@@ -19,6 +20,13 @@ const index = ({franchisePrinciple, advisors, supportStaff}) => {
 
   return (
     <div className={style.container}>
+      <>
+        <Head>
+          <title>
+            Alchemy Team
+          </title>
+        </Head>
+      </>
       <div className={style.banner}>
         <div className={style.bannerImage}>
           <Image layout='fill' objectFit='cover' src={bannerImage} />
@@ -109,11 +117,6 @@ export const getStaticProps = async () => {
   const franchisePrincipleFilter = []
   const advisorsfilter = []
   const supportStaffFilter = []
-
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
 
   if(response.data.data){
     response.data.data.forEach(

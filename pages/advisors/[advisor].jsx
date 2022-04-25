@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import axios from 'axios'
 import ReactMarkdown from 'react-markdown'
+import Head from 'next/head'
 
 // components
 import AdvisorContactCard from '../../components/AdvisorContactCard'
@@ -20,6 +21,14 @@ const advisor = (props) => {
 
   return (
     <div className={style.container}>
+      <>
+        <Head>
+          <title>
+            {props.name} {props.surname} Profile
+          </title>
+        </Head>
+      </>
+      
       <div className={style.left}>
 
         <div className={style.image}>

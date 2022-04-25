@@ -10,7 +10,7 @@ import style from '../styles/mainBanner.module.css'
 const MainBanner = () => {
   return (
     <div className={style.wrapper}>
-      <div className={style.mainBannerContainer} priority="true"/>
+      <div className={style.mainBannerContainer} priority="true" />
     </div>
   )
 }

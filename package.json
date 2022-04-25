@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "buildExport": "next build && next export",
-    "start": "next start",
+    "start": "PORT=3001 next start",
     "now-build": "next build",
     "lint": "next lint"
   },
@@ -15,17 +15,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.26.1",
+    "axios": "^0.27.0",
     "next": "^12.1.5",
     "next-seo": "^5.4.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-markdown": "^8.0.2",
+    "react-markdown": "^8.0.3",
     "react-transition-group": "^4.4.2",
     "sharp": "^0.30.4"
   },
   "devDependencies": {
-    "eslint": "^8.13.0",
+    "eslint": "^8.14.0",
     "webpack": "^5.72.0"
   }
 }

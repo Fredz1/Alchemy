@@ -18,7 +18,7 @@ const ContactBanner = () => {
     <div className={style.container}>
 
       <div className={style.image}>
-        <Image src={contactPic} layout='fill' objectFit='contain' />
+        <Image src={contactPic} layout='fill' objectFit='contain' alt='Hand holding business card'/>
       </div>
 
       <div className={style.form}>
@@ -29,7 +29,7 @@ const ContactBanner = () => {
         <div>
 
           <div className={style.icon}>
-            <Image src={mailIcon} layout='fill' objectFit='contain' />
+            <Image src={mailIcon} layout='fill' objectFit='contain' alt='phone icon'/>
           </div>
 
           <div>
@@ -42,7 +42,7 @@ const ContactBanner = () => {
         <div>
 
           <div className={style.icon}>
-            <Image src={mailIcon} layout='fill' objectFit='contain' />
+            <Image src={mailIcon} layout='fill' objectFit='contain' alt='mail icon'/>
           </div>
           
           <div>
@@ -55,7 +55,7 @@ const ContactBanner = () => {
         <div>
 
           <div className={style.icon}>
-            <Image src={mailIcon} layout='fill' objectFit='contain' />
+            <Image src={mailIcon} layout='fill' objectFit='contain' alt='message icon'/>
           </div>
           <p>
             Click <Link href="/contact"><a>here</a></Link> to use our contact form

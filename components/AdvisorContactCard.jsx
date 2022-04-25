@@ -40,6 +40,5 @@ const AdvisorContactCard = (props) => {
     </div>
   )
 }
-/* <a href="mailto:alchemy@alchemy.co.za?subject=Im%20interested%20in&body=I%20would%20like%20you%20to%20contact%20me.">alchemy@alchemy.co.za</a> */
-/* <a href="tel:+27 027 134 9290">076 134 9290</a> */
+
 export default AdvisorContactCard
