@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Head from 'next/head'
 
 // style
 import style from '../styles/contact.module.css'
@@ -11,6 +12,9 @@ import style from '../styles/contact.module.css'
 import facebookIcon from '../public/assets/icons/socialMediaIcons/facebookSocialMediaColor.png'
 import instagramIcon from '../public/assets/icons/socialMediaIcons/instagramIcon.png'
 
+/**
+ * HOOK
+ */
 const contact = () => {
 
   // Input form State
@@ -32,6 +36,15 @@ const contact = () => {
 
   return (
     <div className={style.container}>
+
+      <>
+        <Head>
+          <title>
+            Contact Us       
+          </title>
+        </Head>
+      </>
+
       <div className={style.details}>
         
         <div>

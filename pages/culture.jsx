@@ -12,39 +12,41 @@ import Head from 'next/head'
 const culture = (props) => {
 
   return (
-    <div className={style.container}>
-
-      <>
-        <Head>
-          <title>
-            Alchemy Culture            
-          </title>
-        </Head>
-      </>
-
-      <div className={style.banner}>
-
-      </div>
-      {/* Image Area */}
-      <div>
-        {
-          props.imageData.map(
-            el => {
-              return (
-                <div key={el.hash} className={style.image}>
-                  <Image 
-                    src={`https://cms.fredmadethis.co.za${el.url}`} 
-                    layout='fill'
-                    objectFit='contain'
-                  />
-                </div>
-              )
-            }
-          )
-        }
-      </div>
+    <>
       
-    </div>
+      <Head>
+        <title>
+          Alchemy Culture            
+        </title>
+      </Head>
+      
+      <div className={style.container}>
+
+        
+
+        {/* <div className={style.banner}>
+
+        </div> */}
+        {/* Image Area */}
+        
+          {
+            props.imageData.map(
+              el => {
+                return (
+                  <div key={el.hash} className={style.image}>
+                    <Image 
+                      src={`https://cms.fredmadethis.co.za${el.url}`} 
+                      layout='fill'
+                      objectFit='contain'
+                    />
+                  </div>
+                )
+              }
+            )
+          }
+        
+      </div>
+    </>
   )
 }
 

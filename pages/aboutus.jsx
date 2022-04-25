@@ -12,9 +12,9 @@ import ceoImage from '../public/assets/media/ceo_image.jpg'
 
 const aboutus = () => {
 
-
   return (
     <div className={style.container}>
+      
       <>
         <Head>
           <title>
@@ -22,11 +22,10 @@ const aboutus = () => {
           </title>
         </Head>
       </>
+
       <div className={style.bannerImage}>
         <Image src={ceoImage} layout='fill' objectFit='cover' quality={60}/>
       </div>
-
-
 
       <div>
         <h3>
