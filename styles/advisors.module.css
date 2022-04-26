@@ -61,10 +61,10 @@
   }
 
   .advisorSection{
-    grid-template-columns: repeat(auto-fit, minmax(170px ,250px));
-    grid-template-rows: repeat(auto-fit, 2fr);
-    margin: 0.5em auto;
-    gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(125px ,150px));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    margin: 1em auto;
+    column-gap: 1em;
     row-gap: 2em;
     
   }

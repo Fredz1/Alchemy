@@ -4,16 +4,14 @@
   column-gap: 1em;
   width: max-content;
   z-index: 10;
+  text-align: center;
 }
 
 .linksShow, .linksHidden > *:hover{
-  transform: scale(1.05);
+  transform: scale(1);
   transition: all 0.3s ease;
 }
 
-.linksShow, .linksHidden > *:focus:active{
-  transition: all 5ms ease;
-}
 
 .linksShow > *{
   height: 100%;
@@ -25,7 +23,6 @@
 .bugerIcon{
   display: none;
 }
-
 
 
 @media all and (max-width: 768px){

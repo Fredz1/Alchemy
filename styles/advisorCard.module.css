@@ -8,14 +8,15 @@
   align-items: center;
   width: 100%;
   row-gap: 0.25em;
-  background-color: rgba(42, 94, 140, 0.5);
+  background-color: rgba(42, 94, 140, 0.40);
   padding: 5px;
   font-size: 14px;
 }
 
 .container:hover{
-  box-shadow: inset 0px 0px 2px 3px rgba(42, 94, 140, 0.1);
+  box-shadow: inset 0px 0px 1px 4px rgba(42, 94, 140, 0.2);
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .image{

@@ -1,7 +1,8 @@
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content max-content;
   height: fit-content;
+  justify-content: center;
   min-height: 100vh;
   margin: 2em 4em;
   column-gap: 5em;
@@ -30,6 +31,7 @@
   height: fit-content;
   justify-items: start;
   row-gap: 1em;
+  column-gap: 1em;
   background-color: rgba(42, 94, 140, 0.25);
   padding: 1em;
 }

@@ -7,8 +7,7 @@
     "dev": "next",
     "build": "next build",
     "buildExport": "next build && next export",
-    "start": "PORT=3001 next start",
-    "now-build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "keywords": [],
@@ -26,6 +25,7 @@
   },
   "devDependencies": {
     "eslint": "^8.14.0",
+    "next-sitemap": "^2.5.20",
     "webpack": "^5.72.0"
   }
 }

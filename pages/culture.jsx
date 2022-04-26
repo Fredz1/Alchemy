@@ -55,8 +55,6 @@ export const getStaticProps = async ( { params } ) => {
     `https://cms.fredmadethis.co.za/api/cultures?populate=*`
   )
 
-  // console.log(cultureImages.data.data[0].attributes.alchemyCulture.data)
-
   const imageData = []
 
   cultureImages.data.data[0].attributes.alchemyCulture.data.map(
@@ -66,7 +64,6 @@ export const getStaticProps = async ( { params } ) => {
         hash: el.attributes.hash,
         url: el.attributes.url
       }
-      console.log(data)
       imageData.push(data)
     }
   )

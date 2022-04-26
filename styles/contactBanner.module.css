@@ -1,12 +1,13 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 30vw;
+  height: max-content;
   min-height: fit-content;
   font-size: 1.2em;
   gap: 1em;
   background-color: rgba(114, 94, 92, 1);
   color: white;
+  margin-top: 2em;
 }
  
 .image{
@@ -22,7 +23,7 @@
   max-height: 32px;
   width: auto;
   padding: 0 0.5em;
-  border-left: 2px solid #0099b0;
+  /* border-left: 2px solid #0099b0; */
 }
 
 .form{
