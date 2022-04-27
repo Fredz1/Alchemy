@@ -9,6 +9,7 @@ import Head from 'next/head'
 /**
  * HOOK
  */
+
 const culture = (props) => {
 
   return (
@@ -67,9 +68,6 @@ export const getStaticProps = async ( { params } ) => {
       imageData.push(data)
     }
   )
-
-  
-
 
     return{
       props:
