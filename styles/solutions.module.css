@@ -6,7 +6,7 @@
   max-height: fit-content;
   /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
   align-content: center;
-  padding: 12vw 4em;
+  padding: 2vw 4em;
   z-index: 0;
   row-gap: 5vh;
 }

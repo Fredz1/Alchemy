@@ -30,7 +30,26 @@ const Solutions = () => {
         </div>
         <div>
           <h3>
+            Post-Retirement
+          </h3>
+          
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae repellendus porro voluptates delectus aliquam nulla sed! Voluptatibus ducimus consequuntur inventore doloremque expedita odio temporibus.
+          </p>
+        </div>
+        <div>
+          <h3>
             Life Cover
+          </h3>
+          
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque maxime aut recusandae adipisci cupiditate earum ad unde. Ipsum, magni? Ex voluptate suscipit voluptas? Laudantium!
+          </p>
+          
+        </div>
+        <div>
+          <h3>
+            Estate Planning
           </h3>
           
           <p>

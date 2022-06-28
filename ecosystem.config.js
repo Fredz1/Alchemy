@@ -12,7 +12,8 @@ module.exports = {
     production: {
       user: "root",
       host: "197.81.132.15",
-      path: "~/alchemy/"
+      path: "~/alchemy/",
+      repo
     }
   }
 }

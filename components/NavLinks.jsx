@@ -37,7 +37,7 @@ const NavLinks = () => {
         </Link>
 
         <Link href='/aboutus' onClick={() => setshowMenu(!showMenu)} >
-          <a aria-label='About Us'>About</a>
+          <a aria-label='About Us'>About Us</a>
         </Link>
 
         <Link href='/culture' onClick={() => setshowMenu(!showMenu)}>
