@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: repeat(2, max-content);
   grid-template-rows: repeat(2, max-content);
-  height: 75vh;
+  height: max-content;
   max-height: fit-content;
   /* box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.2) inset; */
   align-content: center;
@@ -18,7 +18,7 @@
 
 .offering{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(20em, 1fr));
   grid-template-rows: repeat(auto-fit,minmax(15em, 1fr));
 
   gap: 4em;

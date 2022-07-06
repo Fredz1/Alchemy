@@ -1,11 +1,11 @@
 // Modules
 import React from 'react'
 import Head from 'next/head'
-
 // Components
 import MainBanner from '../components/MainBanner'
 import Solutions from '../components/Solutions'
 import ContactBanner from '../components/ContactBanner'
+//import TopMediaBar from '../components/TopMediaBar'
 
 /* 
   HOOK
